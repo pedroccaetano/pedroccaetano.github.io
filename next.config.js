@@ -1,8 +1,4 @@
-const isProd = process.env.NODE_ENV === 'production'
-
-
 module.exports = {
-  assetPrefix: isProd ? '/pedroccaetano.github.io/' : '',
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
