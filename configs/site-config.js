@@ -43,7 +43,7 @@ const siteConfig = {
       //   icon: <FaQuora />
       // },
       {
-        url: "mailto:pedroccaetano@gmail.com",
+        url: "mailto:pedrohenriquedecaldascaetano@gmail.com",
         label: "Pedro caetano",
         type: "gray",
         icon: <FiMail />
