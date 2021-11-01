@@ -79,13 +79,13 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
             <Box as="strong" fontWeight="600">
               Pedro Caetano
             </Box>{" "}
-            sou um{" "}
+            sou {" "}
             <Box as="span" whiteSpace="nowrap">
               Desenvolvedor Full Stack.
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            Construí esta página para compartilhar meus projeto e experiência 😊
+            Construí esta página para compartilhar meus projetos e experiências. 😊
           </Box>
           <Box textAlign="right">
             {siteConfig.author.accounts.map((sc, index) => (
