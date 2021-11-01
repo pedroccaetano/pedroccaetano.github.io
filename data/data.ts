@@ -27,7 +27,7 @@ export const companies = [
     title: "IBGE - Instituto Brasileiro de Geografia e Estatística",
     alt: "IBGE",
     role: "Estágio Desenvolvedor Web",
-    skills: ["Java", "Java Server Faces", "Primefaces", "JavaScript", "HTML5", "CSS3", "python", "angular", "Mysql", "Apache Subversion"],
+    skills: ["Java", "Java Server Faces", "Primefaces", "JavaScript", "HTML5", "CSS3", "Mysql", "Apache Subversion"],
     period: "2016 - 2017",
     logo: '/assets/images/logos/ibge.png'
   }
