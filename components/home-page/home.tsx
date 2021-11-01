@@ -85,7 +85,7 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            Aqui você encontra algumas coisas sobre mim e meus projetos. 😊
+            Construí esta página para compartilhar meus projeto e experiência 😊
           </Box>
           <Box textAlign="right">
             {siteConfig.author.accounts.map((sc, index) => (
