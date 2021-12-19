@@ -7,17 +7,17 @@ import {
   Text,
   Image,
   useColorMode,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaGraduationCap } from "react-icons/fa";
-import { BsFillBriefcaseFill } from "react-icons/bs";
+import { GiDiploma } from "react-icons/gi";
+import { BsFillBriefcaseFill, BsLaptop } from "react-icons/bs";
 import {
   PageSlideFade,
   StaggerChildren,
-  CardTransition
+  CardTransition,
 } from "components/ui/page-transitions";
 import { MotionBox } from "components/ui/motion";
-import { companies, institutes, courses } from "data/data";
 import Header from "components/layout/header";
 import PageLayout from "components/layout/pageLayout";
 import { Tags } from "components/ui/Tags";
@@ -86,7 +86,7 @@ const Card = (props: CardProps) => {
                   tagProps={{
                     colorScheme: "gray",
                     padding: "0 3px",
-                    size: "sm"
+                    size: "sm",
                   }}
                 />
               </Stack>
@@ -111,7 +111,7 @@ const Card = (props: CardProps) => {
             tagProps={{
               colorScheme: "gray",
               padding: "0 3px",
-              size: "sm"
+              size: "sm",
             }}
           />
         </Stack>
@@ -120,7 +120,7 @@ const Card = (props: CardProps) => {
   );
 };
 
-const About = ({ companies, institutes, courses }) => {
+const About = ({ companies, institutes, courses, projects }) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -194,13 +194,68 @@ const About = ({ companies, institutes, courses }) => {
               </MotionBox>
             ))}
           </VStack>
+
+          <Heading>
+            <Flex alignItems="center">
+              <Header underlineColor={TURQUOISE} mt={0} mb={0}>
+                Projetos
+              </Header>
+              <Stack pl={3}>
+                <Box as={BsLaptop} size="25px" />
+              </Stack>
+            </Flex>
+          </Heading>
+          <VStack
+            spacing={4}
+            marginBottom={6}
+            align="left"
+            mx={[0, 0, 6]}
+            mt={12}
+          >
+            {projects.map((project, index) => (
+              <MotionBox
+                whileHover={{ y: -5 }}
+                key={index}
+                cursor={project.link && "pointer"}
+              >
+                {!!project.link ? (
+                  <a
+                    target="_blank"
+                    href={project.link}
+                    style={{ color: "initial" }}
+                  >
+                    <Card
+                      key={index}
+                      title={project.title}
+                      role={project.desc}
+                      skills={project.skills}
+                      period={project.period}
+                      logo={project.logo}
+                      colorMode={colorMode}
+                    />
+                  </a>
+                ) : (
+                  <Card
+                    key={index}
+                    title={project.title}
+                    role={project.desc}
+                    skills={project.skills}
+                    period={project.period}
+                    logo={project.logo}
+                    colorMode={colorMode}
+                  />
+                )}
+              </MotionBox>
+            ))}
+          </VStack>
+
           <Heading>
             <Flex alignItems="center">
               <Header underlineColor={TURQUOISE} mt={0} mb={0}>
                 Cursos
               </Header>
               <Stack pl={3}>
-                <Box as={FaGraduationCap} size="25px" />
+                <Box as={GiDiploma} size="25px" />
               </Stack>
             </Flex>
           </Heading>
@@ -230,15 +285,5 @@ const About = ({ companies, institutes, courses }) => {
     </PageLayout>
   );
 };
-
-export function getStaticProps() {
-  return {
-    props: {
-      companies,
-      institutes,
-      courses
-    }
-  };
-}
 
 export default About;

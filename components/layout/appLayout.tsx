@@ -6,7 +6,7 @@ import Footer from "./footer";
 function AppLayout(props) {
   return (
     <Fragment>
-      <TopNav />
+      {/* <TopNav /> */}
       <Box
         textAlign="center"
         fontSize="xl"
@@ -14,7 +14,7 @@ function AppLayout(props) {
         maxW={800}
         mx="auto"
       >
-        <Box pt={'7rem'} pb={10}>
+        <Box pt={"3rem"} pb={10}>
           {props.children}
         </Box>
       </Box>

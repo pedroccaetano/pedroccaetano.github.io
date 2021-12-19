@@ -4,7 +4,7 @@ import Header from "../../layout/header";
 import { AnimateSharedLayout } from "framer-motion";
 import { MotionBox } from "../../ui/motion";
 
-import uuid from 'react-uuid'
+import uuid from "react-uuid";
 
 interface ProjectsProps {
   projects: project[];
@@ -23,6 +23,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           {projects.map((project, index) => (
             <MotionBox whileHover={{ y: -5 }} key={uuid()}>
               <ProjectCard
+                key={uuid()}
                 title={project.title}
                 description={project.desc}
                 blurHash={project.blurHash}

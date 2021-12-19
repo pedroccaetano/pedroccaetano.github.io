@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   MenuItem,
   Stack,
-  Icon
+  Icon,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -41,7 +41,7 @@ const dropdownLinks = [
   { name: "Tech Stack", path: "/tech-stack" },
   { name: "Open Source", path: "/open-source" },
   { name: "Developer Story", path: "/developer-story" },
-  { name: "Achievements", path: "/achievements" }
+  { name: "Achievements", path: "/achievements" },
 ];
 
 interface NavLinkProps {
@@ -55,7 +55,7 @@ const NavLink = (props: NavLinkProps) => {
   const router = useRouter();
   const link = {
     bg: useColorModeValue("gray.200", "gray.900"),
-    color: useColorModeValue("blue.500", "blue.200")
+    color: useColorModeValue("blue.500", "blue.200"),
   };
 
   return (
@@ -66,7 +66,7 @@ const NavLink = (props: NavLinkProps) => {
         rounded={"md"}
         _hover={{
           textDecoration: "none",
-          bg: link.bg
+          bg: link.bg,
         }}
         bg={router.pathname === props.path ? link.bg : "transparent"}
         color={router.pathname === props.path ? link.color : "inherit"}
@@ -94,7 +94,7 @@ const MenuLink = (props: MenuLinkProps) => {
     ),
     "/open-source": <Icon as={BsBook} size={18} color={props.color} />,
     "/developer-story": <Icon as={MdTimeline} size={18} color={props.color} />,
-    "/achievements": <Icon as={BsCheckCircle} size={18} color={props.color} />
+    "/achievements": <Icon as={BsCheckCircle} size={18} color={props.color} />,
   };
 
   return (
@@ -121,7 +121,7 @@ export default function TopNav() {
 
   const menuProps = {
     bg: useColorModeValue("gray.200", "gray.900"),
-    color: useColorModeValue("blue.500", "blue.200")
+    color: useColorModeValue("blue.500", "blue.200"),
   };
 
   return (

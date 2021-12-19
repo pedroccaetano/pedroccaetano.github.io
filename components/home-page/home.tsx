@@ -1,14 +1,11 @@
-import {
-  Flex,
-  Avatar,
-  Box,
-  Link,IconButton
-} from "@chakra-ui/react";
+import { Flex, Avatar, Box, Link, IconButton } from "@chakra-ui/react";
 import { MotionBox, MotionFlex } from "components/ui/motion";
 import Header from "components/layout/header";
 import Projects from "./projects";
-import { useLinkColor } from 'components/ui/theme'
+import { useLinkColor } from "components/ui/theme";
 import siteConfig from "../../configs/site-config";
+import { companies, institutes, courses } from "data/data";
+import About from "pages/about";
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";
@@ -16,15 +13,23 @@ const ORANGE = "#ff9400";
 const iconProps = {
   variant: "ghost",
   size: "lg",
-  isRound: true
+  isRound: true,
 };
 
 interface HomeProps {
   projects: project[];
+  companies: any[];
+  courses: any[];
+  institutes: any[];
 }
 
-const Home: React.FC<HomeProps> = ({ projects }) => {
-  const linkColor = useLinkColor()
+const Home: React.FC<HomeProps> = ({
+  projects,
+  companies,
+  courses,
+  institutes,
+}) => {
+  const linkColor = useLinkColor();
 
   return (
     <Flex direction="column" align="center">
@@ -33,14 +38,14 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           opacity="0"
           initial={{
             translateX: -150,
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
             translateX: 0,
             opacity: 1,
             transition: {
-              duration: ANIMATION_DURATION
-            }
+              duration: ANIMATION_DURATION,
+            },
           }}
           m="auto"
           mb={[16, 16, "auto"]}
@@ -48,7 +53,9 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           <Avatar
             size={"2xl"}
             // src={UserIcon}
-            src={"https://avatars.githubusercontent.com/u/20362121?s=400&u=4e6ac269b16f14148f80da5a90a608b92e980005&v=4"}
+            src={
+              "https://avatars.githubusercontent.com/u/20362121?s=400&u=4e6ac269b16f14148f80da5a90a608b92e980005&v=4"
+            }
           />
         </MotionBox>
         <MotionFlex
@@ -61,17 +68,17 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           direction="column"
           initial={{
             opacity: 0,
-            translateX: 150
+            translateX: 150,
           }}
           animate={{
             opacity: 1,
             translateX: 0,
             transition: {
-              duration: ANIMATION_DURATION
-            }
+              duration: ANIMATION_DURATION,
+            },
           }}
         >
-          <Header underlineColor={ORANGE} emoji="👋" mt={0}>
+          <Header underlineColor={ORANGE} mt={0}>
             Olá!
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
@@ -79,13 +86,14 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
             <Box as="strong" fontWeight="600">
               Pedro Caetano
             </Box>{" "}
-            sou {" "}
+            sou{" "}
             <Box as="span" whiteSpace="nowrap">
-              Desenvolvedor Full Stack.
+              Desenvolvedor React Pleno.
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            Construí esta página para compartilhar meus projetos e experiências. 😊
+            Construí esta página para compartilhar meus projetos e experiências.
+            😊
           </Box>
           <Box textAlign="right">
             {siteConfig.author.accounts.map((sc, index) => (
@@ -108,15 +116,15 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         w="100%"
         opacity="0"
         initial={{
-          translateY: 80
+          translateY: 80,
         }}
         animate={{
           translateY: 0,
           opacity: 1,
           transition: {
             delay: ANIMATION_DURATION - 0.1,
-            duration: ANIMATION_DURATION
-          }
+            duration: ANIMATION_DURATION,
+          },
         }}
       >
         <Box mt={10}>
@@ -156,7 +164,13 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
               </ListItem>
             </UnorderedList>
           </Stack> */}
-          <Projects projects={projects} />
+          <About
+            companies={companies}
+            institutes={institutes}
+            projects={projects}
+            courses={courses}
+          />
+          {/* <Projects projects={projects} /> */}
         </Box>
       </MotionBox>
     </Flex>
