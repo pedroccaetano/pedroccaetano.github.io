@@ -224,7 +224,7 @@ const About = ({ companies, institutes, courses, projects }) => {
                     key={index}
                     title={project.title}
                     role={project.desc}
-                    skills={project.skills}
+                    skills={project.technologies}
                     period={project.period}
                     logo={project.logo}
                     colorMode={colorMode}
@@ -235,7 +235,7 @@ const About = ({ companies, institutes, courses, projects }) => {
                   key={index}
                   title={project.title}
                   role={project.desc}
-                  skills={project.skills}
+                  skills={project.technologies}
                   period={project.period}
                   logo={project.logo}
                   colorMode={colorMode}
