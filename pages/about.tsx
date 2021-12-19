@@ -218,7 +218,7 @@ const About = ({ companies, institutes, courses, projects }) => {
                 key={index}
                 cursor={project.link && "pointer"}
               >
-                {!!project.link ? (
+                {project.link ? (
                   <a
                     target="_blank"
                     href={project.link}
