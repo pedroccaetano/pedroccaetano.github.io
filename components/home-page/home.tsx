@@ -5,7 +5,7 @@ import Projects from "./projects";
 import { useLinkColor } from "components/ui/theme";
 import siteConfig from "../../configs/site-config";
 import { companies, institutes, courses } from "data/data";
-import About from "pages/about";
+import About from "components/about";
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";

@@ -5,7 +5,7 @@ import PageLayout from "components/layout/pageLayout";
 
 export default function Index({ projects }) {
   return (
-    <PageLayout title="Pedro Caetano - Full Stack Developer">
+    <PageLayout title="Pedro Caetano - React Developer Pleno">
       <Home
         projects={projects}
         companies={companies}
