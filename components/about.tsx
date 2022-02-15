@@ -10,8 +10,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaGraduationCap } from "react-icons/fa";
-import { GiDiploma } from "react-icons/gi";
-import { BsFillBriefcaseFill, BsLaptop } from "react-icons/bs";
+import { MdClass, MdDesignServices } from "react-icons/md";
+import { BsFillBriefcaseFill } from "react-icons/bs";
 import {
   PageSlideFade,
   StaggerChildren,
@@ -19,7 +19,6 @@ import {
 } from "components/ui/page-transitions";
 import { MotionBox } from "components/ui/motion";
 import Header from "components/layout/header";
-import PageLayout from "components/layout/pageLayout";
 import { Tags } from "components/ui/Tags";
 
 interface CardProps {
@@ -197,7 +196,7 @@ const About = ({ companies, institutes, courses, projects }) => {
               Projetos
             </Header>
             <Stack pl={3}>
-              <Box as={BsLaptop} size="25px" />
+              <Box as={MdDesignServices} size="25px" />
             </Stack>
           </Flex>
         </Heading>
@@ -251,7 +250,7 @@ const About = ({ companies, institutes, courses, projects }) => {
               Cursos
             </Header>
             <Stack pl={3}>
-              <Box as={GiDiploma} size="25px" />
+              <Box as={MdClass} size="25px" />
             </Stack>
           </Flex>
         </Heading>
