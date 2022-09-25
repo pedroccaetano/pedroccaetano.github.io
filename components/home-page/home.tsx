@@ -86,7 +86,7 @@ const Home: React.FC<HomeProps> = ({
             <Box as="strong" fontWeight="600">
               Pedro Caetano
             </Box>{" "}
-            and work as a{" "}
+            and I work as a{" "}
             <Box as="span" whiteSpace="nowrap">
               Front End Developer.
             </Box>
