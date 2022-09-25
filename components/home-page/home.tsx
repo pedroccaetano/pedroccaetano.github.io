@@ -92,7 +92,7 @@ const Home: React.FC<HomeProps> = ({
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            I create this page to share my projects and my professional
+            I created this page to share my projects and my professional
             experiences. 😊
           </Box>
           <Box textAlign="right">
