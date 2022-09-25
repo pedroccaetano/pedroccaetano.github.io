@@ -1,11 +1,20 @@
 export const projectsList = [
   {
+    id: 6,
+    title: "Glow Delivery Platform",
+    logo: "/assets/images/logos/glow.jpg",
+    blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
+    link: "https://more-talent-tech.netlify.app/",
+    desc: "Develop new functionality and maintain a Food delivery platform",
+    technologies: ["React", "Next.JS", "Material UI"],
+  },
+  {
     id: 5,
     title: "Redesign Môre Educação",
     logo: "/assets/images/logos/more.png",
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
     link: "https://more-talent-tech.netlify.app/",
-    desc: "Projeto criado para fins de estudo.",
+    desc: "Project created for study purposes",
     technologies: ["HTML5", "CSS3", "Sass"],
   },
   {
@@ -13,7 +22,7 @@ export const projectsList = [
     title: "Portal de Gestão Interna  ",
     logo: "/assets/images/logos/aliare.jpg",
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
-    desc: "Projeto privado.",
+    desc: "Private project",
     technologies: ["React", "Node.js", "JavaScript", "HTML5", "Sass", "CSS3"],
   },
   {
@@ -22,7 +31,7 @@ export const projectsList = [
     logo: "/assets/images/projects/neon.png",
     blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
     link: "https://pedroccaetano.github.io/neon/",
-    desc: "Projeto criado para fins de estudo.",
+    desc: "Project created for study purposes",
     technologies: ["JavaScript", "HTML5", "CSS3", "Sass"],
   },
   {
@@ -31,7 +40,7 @@ export const projectsList = [
     logo: "/assets/images/projects/KingHost.png",
     blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
     link: "https://pedroccaetano.github.io/KingHost/",
-    desc: "Projeto criado para fins de estudo.",
+    desc: "Project created for study purposes",
     technologies: ["HTML5", "CSS3", "Sass"],
   },
   {
@@ -39,7 +48,7 @@ export const projectsList = [
     title: "ADM Web",
     logo: "/assets/images/projects/admweb.png",
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
-    desc: "Projeto privado.",
+    desc: "Private project",
     technologies: ["Vue.js", "JavaScript", "HTML5", "CSS3"],
   },
 ];

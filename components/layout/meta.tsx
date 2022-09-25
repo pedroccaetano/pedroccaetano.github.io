@@ -23,7 +23,7 @@ const Meta = ({ title, keywords, description, image }: Props): JSX.Element => {
 };
 
 Meta.defaultProps = {
-  title: "Pedro Caetano - React Developer Pleno",
+  title: "Pedro Caetano - Front End Developer",
   keywords: "web development, programming, web design",
   description: "Software Engineer. Lover of web and opensource.",
 };

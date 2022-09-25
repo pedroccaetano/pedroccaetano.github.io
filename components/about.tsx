@@ -129,7 +129,7 @@ const About = ({ companies, institutes, courses, projects }) => {
           <Heading>
             <Flex alignItems="center">
               <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-                Carreira
+                Career
               </Header>
               <Stack pl={3}>
                 <Box as={BsFillBriefcaseFill} size="25px" />
@@ -161,7 +161,7 @@ const About = ({ companies, institutes, courses, projects }) => {
         <Heading>
           <Flex alignItems="center">
             <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-              Educação
+              Education
             </Header>
             <Stack pl={3}>
               <Box as={FaGraduationCap} size="25px" />
@@ -193,7 +193,7 @@ const About = ({ companies, institutes, courses, projects }) => {
         <Heading>
           <Flex alignItems="center">
             <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-              Projetos
+              Projects
             </Header>
             <Stack pl={3}>
               <Box as={MdDesignServices} size="25px" />
@@ -247,7 +247,7 @@ const About = ({ companies, institutes, courses, projects }) => {
         <Heading>
           <Flex alignItems="center">
             <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-              Cursos
+              Courses
             </Header>
             <Stack pl={3}>
               <Box as={MdClass} size="25px" />

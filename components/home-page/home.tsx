@@ -79,21 +79,21 @@ const Home: React.FC<HomeProps> = ({
           }}
         >
           <Header underlineColor={ORANGE} mt={0}>
-            Olá!
+            Hi!
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            Meu nome é{" "}
+            I'm{" "}
             <Box as="strong" fontWeight="600">
               Pedro Caetano
             </Box>{" "}
-            sou{" "}
+            and work as a{" "}
             <Box as="span" whiteSpace="nowrap">
-              Desenvolvedor React Pleno.
+              Front End Developer.
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            Construí esta página para compartilhar meus projetos e experiências.
-            😊
+            I developed this page to share my projects and my professional
+            experiences. 😊
           </Box>
           <Box textAlign="right">
             {siteConfig.author.accounts.map((sc, index) => (
