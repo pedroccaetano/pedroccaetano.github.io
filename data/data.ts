@@ -70,7 +70,7 @@ export const companies = [
     logo: "/assets/images/logos/santri.jpg",
   },
   {
-    title: "IFG - Instituto Federal de Goiás",
+    title: "Federal Institute of Goiás",
     alt: "IFG",
     role: "Data Structure Monitor",
     skills: ["c++", "c", "Estrutura de Dados", "Algoritmos"],
@@ -99,7 +99,7 @@ export const companies = [
 export const institutes = [
   {
     short_title: "FAST - NUCES",
-    title: "Faculdade Unyleya",
+    title: "Unyleya College",
     alt: "Unyleya",
     role: "Postgraduate in Software Architecture",
     skills: [
@@ -114,9 +114,9 @@ export const institutes = [
     logo: "/assets/images/logos/unyleya.jpg",
   },
   {
-    short_title: "IFG - Instituto Federal de Goiás",
-    title: "IFG - Instituto Federal de Goiás",
-    alt: "IFG - Instituto Federal de Goiás",
+    short_title: "Federal Institute of Goiás",
+    title: "Federal Institute of Goiás",
+    alt: "Federal Institute of Goiás",
     role: "Bachelor in Information System",
     skills: [
       "Algorithms",
