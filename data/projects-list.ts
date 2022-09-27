@@ -4,7 +4,7 @@ export const projectsList = [
     title: "Glow Delivery Platform",
     logo: "/assets/images/logos/glow.jpg",
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
-    link: "https://more-talent-tech.netlify.app/",
+    link: "https://glow.delivery/ribs-express",
     desc: "Develop new functionality and maintain a Food delivery platform",
     technologies: ["React", "Next.JS", "Material UI"],
   },
