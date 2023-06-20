@@ -37,7 +37,7 @@ export const companies = [
       "Figma",
     ],
     period: "2021 - 2022",
-    logo: "https://media.licdn.com/dms/image/C4D0BAQHXTqaueX7X5A/company-logo_200_200/0/1675356312922?e=1695254400&v=beta&t=-nPV0SHBKG13dnS8kSFpDjvU3MgTC6utbtBgXKVMts0",
+    logo: "/assets/images/logos/meta.png",
   },
   {
     title: "Aliare",
