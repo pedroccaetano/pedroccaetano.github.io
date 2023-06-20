@@ -1,5 +1,14 @@
 export const projectsList = [
   {
+    id: 7,
+    title: "Zapi Bot - Glow Delivery",
+    logo: "/assets/images/logos/zapi.jpg",
+    blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
+    desc: "Whatsapp bot",
+    technologies: ["Electron", "Node JS", "Vanilla JS"],
+    images: [],
+  },
+  {
     id: 6,
     title: "Glow Delivery Platform",
     logo: "/assets/images/logos/glow.jpg",
@@ -7,6 +16,7 @@ export const projectsList = [
     link: "https://glow.delivery/ribs-express",
     desc: "Develop new functionality and maintain a Food delivery platform",
     technologies: ["React", "Next.JS", "Material UI"],
+    images: [],
   },
   {
     id: 5,

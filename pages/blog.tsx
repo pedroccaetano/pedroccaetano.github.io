@@ -90,10 +90,8 @@ const Posts = ({ posts }) => {
 };
 
 const getPosts = async () => {
-  const res = await fetch("https://dev.to/api/articles?username=m_ahmad");
-  const posts = await res.json();
 
-  return posts;
+  return [];
 };
 
 const root = process.cwd();
@@ -125,13 +123,13 @@ export const getStaticProps: GetStaticProps = async () => {
       comments_count: frontmatter.comments_count
         ? frontmatter.comments_count
         : devPost?.comments_count
-        ? devPost?.comments_count
-        : 0,
+          ? devPost?.comments_count
+          : 0,
       public_reactions_count: frontmatter.public_reactions_count
         ? frontmatter.public_reactions_count
         : devPost?.public_reactions_count
-        ? devPost?.public_reactions_count
-        : 0,
+          ? devPost?.public_reactions_count
+          : 0,
       tag_list: frontmatter.tags
     });
   });

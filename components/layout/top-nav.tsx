@@ -10,6 +10,11 @@ import {
   MenuItem,
   Stack,
   Icon,
+  Menu,
+  MenuButton,
+  Button,
+  MenuList,
+  Avatar
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -21,16 +26,19 @@ import { BsBook } from "react-icons/bs";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { useLinkColor } from "components/ui/theme";
+import { AccentPicker } from "components/Accent";
+import { BiChevronDown } from "react-icons/bi";
+
 
 const webLinks = [
-  { name: "Principal", path: "/" },
-  { name: "Carreira e Educação", path: "/about" },
-  // { name: "Blog", path: "/blog" }
+  // { name: "Principal", path: "/" },
+  // { name: "Carreira e Educação", path: "/about" },
+  { name: "Blog", path: "/blog" }
 ];
 
 const mobileLinks = [
   { name: "Principal", path: "/" },
-  { name: "Carreira e Educação", path: "/about" },
+  // { name: "Carreira e Educação", path: "/about" },
   // { name: "Open Source", path: "/open-source" },
   // { name: "Blog", path: "/blog" },
   // { name: "Tech Stack", path: "/tech-stack" },
@@ -38,10 +46,10 @@ const mobileLinks = [
 ];
 
 const dropdownLinks = [
-  { name: "Tech Stack", path: "/tech-stack" },
-  { name: "Open Source", path: "/open-source" },
-  { name: "Developer Story", path: "/developer-story" },
-  { name: "Achievements", path: "/achievements" },
+  // { name: "Tech Stack", path: "/tech-stack" },
+  // { name: "Open Source", path: "/open-source" },
+  // { name: "Developer Story", path: "/developer-story" },
+  // { name: "Achievements", path: "/achievements" },
 ];
 
 interface NavLinkProps {
@@ -150,7 +158,7 @@ export default function TopNav() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            {/* <Box>
+            <Box>
               <NextLink href={"/"} passHref>
                 <Avatar
                   as={Link}
@@ -159,7 +167,7 @@ export default function TopNav() {
                   src={"https://avatars.githubusercontent.com/u/20362121?s=400&u=4e6ac269b16f14148f80da5a90a608b92e980005&v=4"}
                 />
               </NextLink>
-            </Box> */}
+            </Box>
             <HStack
               as={"nav"}
               spacing={4}
@@ -211,13 +219,6 @@ export default function TopNav() {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            {/* <AccentPicker
-              aria-label="Accent Color Picker"
-              variant="ghost"
-              zIndex={1}
-              color={linkColor}
-              mr={2}
-            /> */}
             <ColorModeSwitcher justifySelf="flex-end" />
           </Flex>
         </Flex>
